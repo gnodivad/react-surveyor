@@ -30,9 +30,7 @@ class Header extends Component {
                         Surveyor
                     </Link>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
-                        <li>
-                            <a>{this.renderContent()}</a>
-                        </li>
+                        {this.renderContent()}
                     </ul>
                 </div>
             </nav>
