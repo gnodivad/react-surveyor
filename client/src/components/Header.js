@@ -16,9 +16,14 @@ class Header extends Component {
                 );
             default:
                 return (
-                    <li>
-                        <a href="/api/logout">Logout</a>
-                    </li>
+                    <React.Fragment>
+                        <li>
+                            <Payment />
+                        </li>
+                        <li>
+                            <a href="/api/logout">Logout</a>
+                        </li>
+                    </React.Fragment>
                 );
         }
     }
