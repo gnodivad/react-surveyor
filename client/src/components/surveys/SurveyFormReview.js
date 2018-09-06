@@ -3,13 +3,6 @@ import { connect } from "react-redux";
 import _ from "lodash";
 import formFields from "./formFields";
 
-const FIELDS = [
-    { label: "Survey Title", name: "title" },
-    { label: "Subject Line", name: "subject" },
-    { label: "Email Body", name: "body" },
-    { label: "Recipient List", name: "emails" }
-];
-
 const SurveyFormReview = ({ onCancel, formValues }) => {
     const reviewFields = _.map(formFields, ({ name, label }) => {
         return (
